@@ -1,0 +1,40 @@
+.abaselecionada{
+    background-color: #ddd !important;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 2px;
+
+}   
+
+.btn_inicio{
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #7A7C7B;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-inline: auto;
+    color: #fff;
+    margin-top: 3.78rem;
+    font-size: 62.5%;
+}
+
+.btn_receitas{
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #7A7C7B;
+}
+
+.btn_contatos{
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #7A7C7B;
+}
+
+.btn_quiz{
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #7A7C7B; 
+}
