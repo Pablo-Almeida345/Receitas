@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icones/plverde.png" type="image/x-icon"> 
+    <title>HOME</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head> 
+<body> 
+    <header>
+        <div class="dados">
+            <ul>
+                <li><img src="./icones/home.png" width="45px" alt=""></li>
+                <li><a href="./faq/faq.html" class="nome" >FAQ</a></li>
+                <li><a href="./contatos/contatos.html" class="nome">Contatos</a></li>
+            </ul>
+            <button class="guia">
+                <img src="./icones/guia.png" onclick="abrirMenu()" alt="Logo" width="45px">
+            </button>
+
+            <nav>
+
+                <button class="x">
+                    <img src="icones/imagem do x.png" onclick="fecharMenu()" alt="imagem de um x" width="33px">
+                </button>
+
+                <h1 class="titulo">Guia do site</h1>
+                
+
+                    <a href="" class="text"><strong>1 Home</strong></a>
+                    <a href="2piramide/piramide.html" class="text"><strong>2 Piramide</strong></a>
+                    <a href="receitas/receitas.html" class="text"><strong>3 Receitas</strong></a>
+                    <a href="memoria/memoria.html" class="text"><strong>4 Jogo Da Memória</strong></a>
+                    <a href="faq/faq.html" class="text"><strong>5 FAQ</strong></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIwhAJgX330aeNJ3HpVC5sYQgKR8aS2ktE1IOHyYi2vq2Qyg/viewform?embedded=true" class="text"><strong>6 Planejamento Alimentar</strong></a>
+                    <a href="contatos/contatos.html" class="text"><strong>7 Contatos</strong></a>
+
+
+            </nav>
+        </div>
+    </header>
+    <div class="barra"></div>
+
+    <main>
+        <section class="inicial">
+            <div class="container">
+                <img src="imagens/inicial.png" alt="imagem inicial" onclick="inicial()"  width="100%">
+            </div>
+        </section> 
+    </main> 
+
+    <div class="textos">
+            <button class="item" onclick="piramide()">
+                <img src="./imagens/piramidealimentar.png" alt="imagem redonda da Pirâmide Alimentar">
+                Pirâmide <br> Alimentar
+              </button>
+              <button class="item" id="planejamento">
+                  <img src="./imagens/planejamento.png" alt="imagem redonda do planejamento alimentar">
+                  Planejamento <br> Alimentar
+              </button>
+
+              <button class="item" onclick="memoria()">
+              <img src="./imagens/memoria.png" alt="imagem do jogo da memoria"> 
+               Jogo Da <br> Memória
+              </button>
+      
+              <button class="item" onclick="receita()">
+              <img src="./imagens/receita.png" alt="imagem redonda da receita">
+              Receitas 
+              </button> 
+      </div> 
+    
+</body>
+</html>

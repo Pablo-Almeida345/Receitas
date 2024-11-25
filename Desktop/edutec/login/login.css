@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .register-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+p {
+    text-align: center;
+}body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5e9; /* Um tom claro de verde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .register-container {
+    background: #ffffff; /* Fundo branco para os formulários */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid #5cb85c; /* Borda verde */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5cb85c; /* Título em verde */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #5cb85c; /* Borda verde nos inputs */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4cae4c; /* Tom mais escuro quando focado */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Botão verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Tom mais escuro quando o botão é hover */
+}
+
+p {
+    text-align: center;
+    color: #333; /* Cor do texto padrão */
+}
+
+a {
+    color: #5cb85c; /* Links em verde */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}* {
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5e9; /* Um tom claro de verde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .register-container {
+    background: #ffffff; /* Fundo branco para os formulários */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid #5cb85c; /* Borda verde */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5cb85c; /* Título em verde */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #5cb85c; /* Borda verde nos inputs */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4cae4c; /* Tom mais escuro quando focado */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c; /* Botão verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4cae4c; /* Tom mais escuro quando o botão é hover */
+}
+
+p {
+    text-align: center;
+    color: #333; /* Cor do texto padrão */
+}
+
+a {
+    color: #5cb85c; /* Links em verde */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

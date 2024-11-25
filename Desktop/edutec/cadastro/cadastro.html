@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icones/plverde.png" type="image/x-icon"> 
+    <title>Criar Conta</title>
+    <script src="cadastro.js" defer></script>
+    <link rel="stylesheet" href="cadastro.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <div class="register-container">
+        <h2>Criar Conta</h2>
+        <form action="login.html" method="POST">
+            <input type="text" placeholder="Nome de Usuário" required id="name">
+            <input type="email" placeholder="Email" required id="email">
+            <input type="password" placeholder="Senha" required id="password">
+            <input type="password" placeholder="Confirmação de Senha" required id="password-confirmation">
+            <button type="submit">Criar Conta</button>
+        </form>
+        <p>Já tem uma conta? <a href="/login/login.html">Faça login aqui</a></p>
+    </div>
+</body>
+</html>

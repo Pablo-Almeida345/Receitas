@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --background: #FFFFFF;
+  --texto: #000;
+  --v1: #008000;
+  --v2: #7CB342;
+  --v3: #558B2F;
+  --v4: #33691E;
+  --v5: #333;
+  --verde-claro: #90ee90;
+  --ativo: #0000FF;
+  --cinza: #d3d3d3;
+  --roxo:#993399;
+  --guia: #60BB49;
+}
+
+body {
+  background-color: var(--background);
+}
+
+body.escurecer::before{
+  content: "";
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 26, 0.5);
+  top: 0;
+  left: 0;
+
+}
+header {
+  background-color: var(--background);
+  padding: 20px 40px;
+  z-index: 999;
+}
+
+header .titulo{
+  color: var(--background);
+  font-size: 40px;
+}
+
+header nav .text{
+  color: var(--background);
+  text-decoration: none;
+  padding: 5px;
+  font-size: 30px;
+}
+
+header nav{
+  position: fixed;
+  background: var(--guia);
+  right: -20rem;
+  top: 0;
+  border-radius: 50px;
+  height: 90vh;
+  width: 20rem;
+  z-index: 999;
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 1.5rem;
+  transition: 0.7s;
+}
+
+header nav.abrir{
+  right: 0;
+}
+
+header .x{
+  border: none;
+  background: none;
+}
+
+header {
+  background-color: var(--background);
+  padding: 5px;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guia {
+  border: none!important;
+  background: var(--background);
+}
+a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.dados ul {
+  display: flex;
+  list-style: none; 
+}
+
+.dados li {
+  margin: 0 15px;
+}
+
+.dados a {
+  text-decoration: none;
+  color: var(--v5);
+  font-size: 1.2rem;
+}
+
+li .ativo {
+  color: var(--ativo);
+} 
+
+.barra {
+  height: 1px;
+  display: flex;
+  align-items: baseline;
+  margin: 0 25px; 
+  background-color: var(--v2); 
+}
+
+.inicial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 40px;
+}
+
+.pesquisa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  text-decoration: none;
+  background: var(--background);
+  border: none;
+  padding: 20px;
+}

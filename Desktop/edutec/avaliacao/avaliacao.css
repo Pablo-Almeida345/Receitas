@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --background:#FFFFFF;
+    --texto:#000;
+    --v1:#008000;
+    --v2: #7CB342;
+    --v3:#558B2F;
+    --v4:#33691E;
+    --v5:#333;
+    --verde-claro:#90ee90;
+    --ativo:#0000FF;
+    --cinza:#d3d3d3;
+  }
+  
+
+body{
+    background-color: var(--background);
+    width: 1440px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta {
+    display: flex;
+    justify-content: baseline;
+    margin: 15px 25px;
+}
+
+.card{
+    background: var(--v1);
+    max-width: 412px;
+    padding: 32px;
+    border-radius: 30px;
+}
+.estrela{
+    background-color: var(--v3);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.card h1{
+    color: var(--background);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: var(--background);
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.botoes button{
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--v2);
+
+    transition: all ease-in-out 0.3s;
+}
+
+.botoes button:hover{
+    color: var(--texto);
+    background-color: var(--cinza);
+    cursor: pointer;
+}
+
+.botoes button:focus{
+    color: var(--texto);
+    background-color: var(--cinza);
+}
+
+.card > a{
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: var(--texto);
+    border: none;
+    border-radius: 22px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cinza);
+    text-align: center;
+    text-decoration: none;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.card > a:hover{
+    color: var(--cinza);
+    background-color: var(--v4);
+    cursor: pointer;
+}

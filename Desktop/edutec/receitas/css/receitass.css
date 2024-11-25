@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  
+  :root{
+    --background:#FFFFFF;
+    --texto:#000;
+    --v1:#008000;
+    --v2: #7CB342;
+    --v3:#558B2F;
+    --v4:#33691E;
+    --v5:#333;
+    --verde-claro:#90ee90;
+    --ativo:#0000FF;
+    --cinza:#d3d3d3;
+    --fundo:#456B29;
+    --texto2:#283618;
+    --guia: #60BB49;
+  }
+  
+  
+  
+  body{
+    width: 1440px;
+    height: 1080px;
+  }
+  
+  
+  body.escurecer::before{
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 26, 0.5);
+    top: 0;
+    left: 0;
+  
+  }
+  
+  header {
+    background-color: var(--background);
+    padding: 20px 40px;
+    z-index: 999;
+  }
+  
+  header .titulo{
+    color: var(--background);
+    font-size: 40px;
+  }
+  
+  header nav .text{
+    color: var(--background);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 30px;
+  }
+  
+  header nav{
+    position: fixed;
+    background: var(--guia);
+    right: -20rem;
+    top: 0;
+    border-radius: 50px;
+    height: 90vh;
+    width: 20rem;
+    z-index: 999;
+    font-size: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    transition: 0.7s;
+  }
+  
+  header nav.abrir{
+    right: 0;
+  }
+  
+  header .x{
+    border: none;
+    background: none;
+  }
+  header {
+    background-color: var(--v2);
+    padding: 5px;
+  }
+    
+  .dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    
+  .guia {
+    border: none!important;
+    background: var(--v2);
+  }
+  
+    
+  a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+    
+  .dados ul {
+    display: flex;
+    list-style: none; 
+  }
+    
+  .dados li {
+    margin: 0 15px;
+  }
+    
+  .dados a {
+    text-decoration: none;
+    color: var(--v5);
+    color: var(--background);
+    font-size: 1.2rem;
+  }
+    
+  .dados .ativo{
+    color: var(--ativo);
+  }
+  
+  
+  
+  
+  .seta {
+    display: flex;
+    justify-content: baseline;
+    margin: 10px 25px;
+}
+
+
+.container {
+  max-width: 1000 px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--fundo);
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--background);
+  font-size: 70px;
+}
+
+.camada2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients {
+  padding: 20px 10px;
+  border-radius: 5px;
+  color: var(--background);
+}
+
+.textos{
+  background: var(--texto2);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.usando{
+  list-style-type: none;
+}
+
+.descricao{
+  background: var(--texto2);
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 20px;
+  color: var(--background);
+}
+
+.preparo{
+  padding: 0 10px;
+}
+.espaco{
+  padding: 0 40px;
+}

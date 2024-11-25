@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --background:#FFFFFF;
+    --texto:#000;
+    --v1:#008000;
+    --v2: #7CB342;
+    --v3:#558B2F;
+    --v4:#33691E;
+    --v5:#333;
+    --verde-claro:#90ee90;
+    --ativo:#0000FF;
+    --cinza:#d3d3d3;
+  }
+body{
+    width: 1440px;
+    height: 1080px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seta {
+    display: flex;
+    justify-content: baseline;
+    margin: 15px 25px;
+}
+
+.card{
+    background: var(--v1);
+    text-align: center;
+    max-width: 412px;
+    padding: 45px 32px;
+    border-radius: 30px;
+}
+
+.card img{
+    margin-bottom: 32px;
+}
+
+.card .paragrafo_nota{
+    background-color: var(--v2);
+    margin-inline: auto;
+    padding: 4px 18px;
+    border-radius: 22px;
+
+    font-size: 15px;
+    color: var(--orange);
+    margin-bottom: 32px;
+}
+
+.card h1{
+    color: var(--background);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: var(--background);
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--ativo);
+}

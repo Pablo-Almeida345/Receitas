@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <script src="receitas.js" defer></script>
+    <link rel="stylesheet" href="receitas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="dados">
+            <ul>
+                <li><img src="../icones/home.png" width="45px" alt="" onclick="home()"></li>
+                <li><a href="../2piramide/piramide.html">Piramide</a></li>
+                <li><a href="#" class="ativo">Receitas</a></li>
+                <li><a href="../memoria/memoria.html">Jogo Da Memória</a></li>
+                <li><a href="../faq/faq.html">FAQ</a></li>
+                <li><a href="../contatos/contatos.html">Contatos</a></li>
+            </ul>
+            <button class="guia"><img src="../icones/guia.png" alt="Logo" width="45px"></button>
+        </div>
+
+        <nav>
+
+            <button class="x">
+                <img src="../icones/imagem do x.png" onclick="fecharMenu()" alt="imagem de um x" width="33px">
+            </button>
+
+            <h1 class="titulo">Guia do site</h1>
+            
+
+                <a href="../index.html" class="text"><strong>1 Home</strong></a>
+                <a href="../2piramide/piramide.html" class="text"><strong>2 Piramide</strong></a>
+                <a href="../receitas/receitas.html" class="text"><strong>3 Receitas</strong></a>
+                <a href="../memoria/memoria.html" class="text"><strong>4 Jogo Da Memória</strong></a>
+                <a href="../faq/faq.html" class="text"><strong>5 FAQ</strong></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScIwhAJgX330aeNJ3HpVC5sYQgKR8aS2ktE1IOHyYi2vq2Qyg/viewform?embedded=true" class="text"><strong>6 Planejamento Alimentar</strong></a>
+                <a href="../contatos/contatos.html" class="text"><strong>7 Contatos</strong></a>
+
+
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1><strong>Receita De Comida</strong></h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <button class="seta-esquerda" onclick="esquerda()">
+                    <img src="../icones/seta_esquerda.png" alt="Seta Esquerda">
+                </button>
+                
+                <div class="carousel-images">
+                    <img src="../imagens receitas/macaron.png" alt="Macarons" onclick="macarron()">
+                    <img src="../imagens receitas/coxa-de-frango.png" alt="Frango Frito" onclick="coxinha_de_frango()">
+                    <img src="../imagens receitas/belem-pastel.png" alt="Pastel de Nata" onclick="belem()">
+                    <img src="../imagens receitas/espaguete.png" alt="Espaguete" onclick="macarrao()">
+                    <img src="../imagens receitas/lasanha01.png" alt="Lasanha" onclick="lasanha()">
+                    <img src="../imagens receitas/suco-aba.png" alt="suco" onclick="suco_abacaxi()">
+                    <img src="../imagens receitas/migual.png" alt="mingau" onclick="mingau()">  
+                    <img src="../imagens receitas/morango-banana.png" alt="morango e banana" onclick="morango_banana()">
+                    <img src="../imagens receitas/tapioca-queijo.png" alt="tapioca-queijo" onclick="tapioca_queijo()">
+                    <img src="../imagens receitas/avocado.png" alt="avocado" onclick="avocado()">
+                </div>
+                
+                <button class="seta-direitra" onclick="direita()">
+                    <img src="../icones/seta_direita.png" alt="Seta Direita">
+                </button>
+            </div>
+        </div>
+    </main>
+
+        <div class="textos">
+           <div class="t1">
+            <p><strong>Aproveite a nossa diversidade de receitas, <br> 
+                com ingredientes de alta qualidade para garantir o sabor autêntico da culinária variada.</strong></p>
+           </div>
+
+            <div class="pratos">
+                <ul>
+                    <li class="l1"><img src="../icones/maocomprato.png" alt="" width="50px"> <br> <strong>Ingredientes Premium</strong></li>
+                    <li class="l2"><img src="../icones/maocoracao.png" alt="" width="50px"> <br> <strong>Receitas Criativas</strong></li>
+                    <li class="l3"><img src="../icones/maoestrela.png" alt="" width="50px"> <br> <strong>Alta Qualidade</strong></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+</html>
