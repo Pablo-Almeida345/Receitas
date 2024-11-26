@@ -37,7 +37,7 @@ function inicial(){
     window.location.href = "receitas/receitas.html  "
 }
 
-function veryfyToken() {
+async function veryfyToken() {
     const token = localStorage.getItem("token")
 
     if(!token){
@@ -46,6 +46,12 @@ function veryfyToken() {
     }
 
     /*verificar se o token e valido*/
+    const response = await fetch("http://localhost:3000/verify", {
+        method: "POST",
+        headers: {
+         "Authorization": token
+        }
+    }).then(response => response.json())
 }
 
 veryfyToken()
