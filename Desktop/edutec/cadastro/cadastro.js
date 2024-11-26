@@ -1,4 +1,4 @@
-function register(){
+async function register(){
     const name = document.querySelector("#name").value
     const email = document.querySelector("#email").value
     const password = document.querySelector("#password").value
@@ -21,6 +21,23 @@ function register(){
         email,
         password
     }
+
+    const response = await fetch("http://localhost:3000/register", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({user})
+    }).then(response => response.json())
+
+    alert(response.message)
+
+    if(response.userExists){
+        window.location.reload()
+        return
+    }
+
+    window.location.href = "/login/login.html"
 }
 
 const button = document.querySelector("form button")
