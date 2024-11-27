@@ -1,3 +1,10 @@
+import { veryfyToken } from "../../utils/verify-token.js"
+import {getname} from "../utils/getname.js"
+import { logout } from "../utils/logout.js"
+
+
+const url = "../login/login.html"
+
 const BotaoAbrir = document.querySelector ("div > .guia")
 const BotaoFechar = document.querySelector ("header nav button")
 
@@ -17,23 +24,34 @@ function fecharMenu(){
     nav.classList.remove("abrir")
 }
 
-
-function base() {
+base.addEventListener('click', () => {
     window.location.href = "./carboidratos/carboidratos.html";
-}
+});
 
-function t1() {
-    window.location.href = "./frutas e vegetais/frutasevegetais.html";
-}
 
-function t2() {
-    window.location.href = "./proteinas/proteinas.html";
-}
-
-function t3() {
-    window.location.href = "./gorduras/gorduras.html";
-}
-
-function home() {
+home.addEventListener('click', () => {
     window.location.href = "../../index.html";
-}
+});
+
+t1.addEventListener('click', () => {
+    window.location.href = "./frutas e vegetais/frutasevegetais.html";
+});
+
+t2.addEventListener('click', () => {
+    window.location.href = "./proteinas/proteinas.html";
+});
+
+t3.addEventListener('click', () => {
+    window.location.href = "./gorduras/gorduras.html";
+});
+
+
+home.addEventListener('click', () => {
+    window.location.href = "../../index.html";
+});
+
+veryfyToken(url)
+
+getname()
+
+logout()

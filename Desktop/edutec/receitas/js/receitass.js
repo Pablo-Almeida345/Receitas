@@ -1,3 +1,9 @@
+import { veryfyToken } from "../../utils/verify-token.js";
+import { getname } from "../../utils/get-name.js";
+import { logout } from "../../utils/logout.js";
+
+const url = "../../login/login.html"
+
 const BotaoAbrir = document.querySelector ("div > .guia");
 const BotaoFechar = document.querySelector ("header nav button")
 
@@ -7,6 +13,7 @@ const nav = document.querySelector("header nav");
 
 BotaoAbrir.addEventListener('click', abrirMenu );
 BotaoFechar.addEventListener('click', fecharMenu );
+
 
 function abrirMenu() {
     body.classList.add("escurecer")
@@ -19,10 +26,15 @@ function fecharMenu(){
 }
 
 
-function seta() {
-    window.location.href = "../receitas.html";
-}
+seta.addEventListener('click', () => {
+    window.location.href = '../receitas.html';
+});
 
-function home() {
-    window.location.href = "../../index.html";
-}
+home.addEventListener('click', () => {
+    window.location.href = '../../index.html';
+});
+
+
+veryfyToken(url)
+getname()
+logout()

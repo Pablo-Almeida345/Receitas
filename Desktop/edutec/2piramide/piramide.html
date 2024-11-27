@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="piramide.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <script src="piramide.js" defer></script>
+    <script src="piramide.js" defer type="module"></script>
     <link rel="shortcut icon" href="../icones/plverde.png" type="image/x-icon"> 
     <title>Piramide Alimentar</title>
-</head>
+</head> 
 <body>
     <header>
         <div class="dados">
             <ul>
-                <li><img src="../../icones/home.png" width="45px" alt="icone da home" onclick="home()"></li>
+                <li><img src="../../icones/home.png" width="45px" alt="icone da home" id="home"></li>
                 <li><a href="#" class="ativo">Pirâmide</a></li>
                 <li><a href="../receitas/receitas.html">Receitas</a></li>
                 <li><a href="../memoria/memoria.html">Jogo Da Memória</a></li>
@@ -54,14 +54,18 @@
                 <div class="resposta">
                     <p>A pirâmide alimentar é uma representação gráfica que organiza os alimentos em diferentes grupos e proporções, ajudando as pessoas a planejarem uma dieta equilibrada. Tradicionalmente, a pirâmide é dividida em várias camadas, cada uma representando um grupo alimentar específico, com a base mais larga indicando os alimentos que devem ser consumidos em maior quantidade e o topo, os que devem ser consumidos com moderação.</p>
                 </div>
+                <div class="user">
+                    <p>Usuario:Teste</p>
+                    <button class="user-button">Sair</button>
+                </div> 
 
             </div>
             <div class="interogacao"> 
                 <div class="img "> 
-                    <img src="../icones/T3.png" alt="gorduras" width="200x" onclick="t3()">
-                    <img src="../icones/T2.png" alt="proteínas" width="300x" onclick="t2()">
-                    <img src="../icones/T1.png" alt="frutas e vegetais" width="400px" onclick="t1()"> 
-                    <img src="../icones/base.png" alt="carboidratos" width="500x"  onclick="base()">
+                    <img src="../icones/T3.png" alt="gorduras" width="200x" id="t3">
+                    <img src="../icones/T2.png" alt="proteínas" width="300x" id="t2">
+                    <img src="../icones/T1.png" alt="frutas e vegetais" width="400px" id="t1"> 
+                    <img src="../icones/base.png" alt="carboidratos" width="500x" id="base">
                 </div>
             </div>
         </section>

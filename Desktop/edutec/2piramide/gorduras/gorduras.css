@@ -206,3 +206,19 @@ button {
   margin-bottom: 10px;
   margin: 10px;
 }
+
+.user p{
+  color: var(--background);
+}
+
+.user-button{
+  background: var(--guia);
+  border-radius: 50px;
+  height: 50%;
+  width: 15%;
+}
+
+.user-button:hover{
+  background: var(--v4);
+  cursor: pointer;
+}

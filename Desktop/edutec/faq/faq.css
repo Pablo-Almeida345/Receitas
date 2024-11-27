@@ -186,3 +186,19 @@ a{
 .container h2{
     font-size: 40px;
 }
+
+.user p{
+    color: var(--background);
+}
+
+.user-button{
+    background: var(--guia);
+    border-radius: 50px;
+    height: 50%;
+    width: 20%;
+  }
+  
+  .user-button:hover{
+    background: var(--v4);
+    cursor: pointer;
+  }

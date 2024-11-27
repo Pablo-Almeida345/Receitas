@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
-    <script src="receitas.js" defer></script>
+    <script src="receitas.js" defer type="module"></script>
     <link rel="stylesheet" href="receitas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <header>
         <div class="dados">
             <ul>
-                <li><img src="../icones/home.png" width="45px" alt="" onclick="home()"></li>
+                <li><img src="../icones/home.png" width="45px" alt=""  id="home"></li>
                 <li><a href="../2piramide/piramide.html">Piramide</a></li>
                 <li><a href="#" class="ativo">Receitas</a></li>
                 <li><a href="../memoria/memoria.html">Jogo Da Memória</a></li>
@@ -51,24 +51,24 @@
         </div>
         <div class="carousel-container">
             <div class="carousel">
-                <button class="seta-esquerda" onclick="esquerda()">
+                <button class="seta-esquerda" id="esquerda">
                     <img src="../icones/seta_esquerda.png" alt="Seta Esquerda">
                 </button>
                 
                 <div class="carousel-images">
-                    <img src="../imagens receitas/macaron.png" alt="Macarons" onclick="macarron()">
-                    <img src="../imagens receitas/coxa-de-frango.png" alt="Frango Frito" onclick="coxinha_de_frango()">
-                    <img src="../imagens receitas/belem-pastel.png" alt="Pastel de Nata" onclick="belem()">
-                    <img src="../imagens receitas/espaguete.png" alt="Espaguete" onclick="macarrao()">
-                    <img src="../imagens receitas/lasanha01.png" alt="Lasanha" onclick="lasanha()">
-                    <img src="../imagens receitas/suco-aba.png" alt="suco" onclick="suco_abacaxi()">
-                    <img src="../imagens receitas/migual.png" alt="mingau" onclick="mingau()">  
-                    <img src="../imagens receitas/morango-banana.png" alt="morango e banana" onclick="morango_banana()">
-                    <img src="../imagens receitas/tapioca-queijo.png" alt="tapioca-queijo" onclick="tapioca_queijo()">
-                    <img src="../imagens receitas/avocado.png" alt="avocado" onclick="avocado()">
+                    <img src="../imagens receitas/macaron.png" alt="Macarons" id="macarron">
+                    <img src="../imagens receitas/coxa-de-frango.png" alt="Frango Frito" id="coxinha_de_frango">
+                    <img src="../imagens receitas/belem-pastel.png" alt="Pastel de Nata" id="belem">
+                    <img src="../imagens receitas/espaguete.png" alt="Espaguete"id="macarrao">
+                    <img src="../imagens receitas/lasanha01.png" alt="Lasanha"  id="lasanha">
+                    <img src="../imagens receitas/suco-aba.png" alt="suco"  id="suco_abacaxi">
+                    <img src="../imagens receitas/migual.png" alt="mingau" id="mingau">  
+                    <img src="../imagens receitas/morango-banana.png" alt="morango e banana"id="morango_banana">
+                    <img src="../imagens receitas/tapioca-queijo.png" alt="tapioca-queijo"  id="tapioca_queijo">
+                    <img src="../imagens receitas/avocado.png" alt="avocado" id="avocado">
                 </div>
                 
-                <button class="seta-direitra" onclick="direita()">
+                <button class="seta-direitra" id="direita">
                     <img src="../icones/seta_direita.png" alt="Seta Direita">
                 </button>
             </div>
@@ -88,6 +88,10 @@
                     <li class="l3"><img src="../icones/maoestrela.png" alt="" width="50px"> <br> <strong>Alta Qualidade</strong></li>
                 </ul>
             </div>
+            <div class="user">
+                <p>Usuario:Teste</p>
+                <button class="user-button">Sair</button>
+              </div> 
         </div>
 
 

@@ -1,3 +1,5 @@
+import { veryfyToken } from "../utils/verify-token.js"
+
 let botoes = document.querySelectorAll(".botoes button")
 
 
@@ -14,3 +16,5 @@ function guardarNota(evento) {
 function seta(){
     window.location.href = "../faq/faq.html";
 }
+
+veryfyToken()

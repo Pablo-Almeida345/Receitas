@@ -1,3 +1,7 @@
+import {verifyToken} from "../utils/verify-token.js"
+
+const url = "../login/login.html"
+
 const BotaoAbrir = document.querySelector ("div > .guia")
 const BotaoFechar = document.querySelector ("header nav button")
 
@@ -18,17 +22,11 @@ function fecharMenu(){
 }
 
 
-
-
-function home() {
+home.addEventListener('click', () => {
     window.location.href = "../../index.html";
-}
+});
 
-function guia() {
-    window.location.href = "../../home.html";
-}
-
-function avaliacao() {
+avaliacao.addEventListener('click', () => {
     window.location.href = "../avaliacao/avaliacao.html";
-}
-
+});
+verifyToken(url)

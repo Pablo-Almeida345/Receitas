@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="carboidratos.css">
-    <script src="carboidratos.js" defer></script>
+    <script src="carboidratos.js" defer type="module"></script>
     <title>carboidratos</title>
 </head>
-<body>
+<body> 
     <header>
         <div class="dados">
             <ul>
-                <li><img src="../../icones/home.png" width="45px" alt="icone da home" onclick="home()"></li>
+                <li><img src="../../icones/home.png" width="45px" alt="icone da home"  id="home"></li>
                 <li><a href="" class="ativo">Pirâmide</a></li>
                 <li><a href="../../memoria/memoria.html">Jogo Da Memória</a></li>
                 <li><a href="../../faq/faq.html">FAQ</a></li>
@@ -43,7 +43,7 @@
     </header>
 
     <div class="seta">
-        <img src="../../icones/seta_esquerda.png" alt="imagem da seta"  width="50px" onclick="seta()">
+        <img src="../../icones/seta_esquerda.png" alt="imagem da seta"  width="50px"  id="seta">
     </div>
 
     <main>
@@ -71,13 +71,19 @@
                         ganho de peso e problemas de saúde. Escolha opções
                         integrais e mantenha um equilíbrio para uma
                         alimentação saudável e nutritiva</p>
+                        
                 </div>
+                <div class="user">
+                    <p>Usuario:Teste</p>
+                    <button class="user-button">Sair</button>
+                </div> 
             </div>
             <div class="interogacao">
                 <div class="img ">
                     <img src="../../imagens/carboidrato.png" alt="imagem da">
-                    <button onclick="mais()">Saiba mais</button>
+                    <button id="mais">Saiba mais</button>
                 </div>
+            
             </div>
         </section>
     </main>

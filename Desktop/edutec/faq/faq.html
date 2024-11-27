@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icones/plverde.png" type="image/x-icon"> 
     <title>FAQ</title>
     <link rel="stylesheet" href="faq.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <script src="faq.js" defer ></script>
+    <script src="faq.js" defer type="module"></script>
 </head>
 <body>
     <header>
         <div class="dados">
             <ul>
-                <li><img src="../../icones/home.png" width="45px" alt="icone da home" onclick="home()"></li>
+                <li><img src="../../icones/home.png" width="45px" alt="icone da home" id="home"></li>
                 <li><a href="../2piramide/piramide.html">Pirâmide</a></li>
                 <li><a href="../receitas/receitas.html">Receitas</a></li>
                 <li><a href="../memoria/memoria.html">Jogo Da Memória</a></li>
@@ -80,9 +80,13 @@
                     <p class="pergunta">Quais são os benefícios de seguir a pirâmide alimentar?</p>
                     <p>Resposta: Mantém um peso saudável, melhora a digestão, aumenta a energia e reduz o risco de doenças crônicas.</p>
                 </div>
+                <div class="user">
+                    <p>Usuario:Teste</p>
+                    <button class="user-button">Sair</button>
+                </div>  
             </div>
             <div class="interogacao">
-                <button onclick="avaliacao()">Faça sua avaliação</button>
+                <button id="avaliacao">Faça sua avaliação</button>
 
                 <div class="img-interogacao">
                     <img src="../icones/interogacao.png" alt="">

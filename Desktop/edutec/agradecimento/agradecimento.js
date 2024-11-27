@@ -1,3 +1,5 @@
+import { veryfyToken } from "../utils/verify-token.js";
+
 function home() {
     window.location.href = "../index.html";
 }
@@ -15,3 +17,5 @@ pegarNota()
 function seta(){
     window.location.href = "../faq/faq.html";
 }
+
+veryfyToken()

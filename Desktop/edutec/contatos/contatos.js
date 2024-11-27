@@ -1,3 +1,5 @@
+import { veryfyToken } from "../utils/verify-token.js"
+
 const BotaoAbrir = document.querySelector ("div > .guia")
 const BotaoFechar = document.querySelector ("header nav button")
 
@@ -42,3 +44,5 @@ function midia(){
 function insta(){
     window.location.href = "https://www.instagram.com/alwaysfresh.unasp/";
 }
+
+veryfyToken()

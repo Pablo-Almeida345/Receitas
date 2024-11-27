@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icones/plverde.png" type="image/x-icon"> 
     <title>HOME</title>
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head> 
 <body> 
-    <header>
-        <div class="dados">
+    <header> 
+        <div class="dados"> 
             <ul>
                 <li><img src="./icones/home.png" width="45px" alt=""></li>
                 <li><a href="./faq/faq.html" class="nome" >FAQ</a></li>
@@ -47,13 +47,13 @@
     <main>
         <section class="inicial">
             <div class="container">
-                <img src="imagens/inicial.png" alt="imagem inicial" onclick="inicial()"  width="100%">
+                <img src="imagens/inicial.png" alt="imagem inicial" id="inicial" width="100%">
             </div>
         </section> 
     </main> 
 
     <div class="textos">
-            <button class="item" onclick="piramide()">
+            <button class="item" id="piramide">
                 <img src="./imagens/piramidealimentar.png" alt="imagem redonda da Pirâmide Alimentar">
                 Pirâmide <br> Alimentar
               </button>
@@ -62,15 +62,19 @@
                   Planejamento <br> Alimentar
               </button>
 
-              <button class="item" onclick="memoria()">
+              <button class="item" id="memoria">
               <img src="./imagens/memoria.png" alt="imagem do jogo da memoria"> 
                Jogo Da <br> Memória
               </button>
       
-              <button class="item" onclick="receita()">
+              <button class="item"  id="receita">
               <img src="./imagens/receita.png" alt="imagem redonda da receita">
               Receitas 
-              </button> 
+              </button>
+              <div class="user">
+                <p></p>
+                <button class="user-button">Sair</button>
+              </div> 
       </div> 
     
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tapioca com queijo e ovo</title>
-    <script src="../js/receitass.js" defer></script>
+    <script src="../js/receitass.js" defer type="module"></script>
     <link rel="stylesheet" href="../css/receitass.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
     <header>
         <div class="dados">
             <ul>
-                <li><img src="../../icones/home.png" width="45px" alt="" onclick="home()"></li>
+                <li><img src="../../icones/home.png" width="45px" alt=""  id="home"></li>
                 <li><a href="../../2piramide/piramide.html">Piramide</a></li>
                 <li><a href="../../receitas/receitas.html" class="ativo">Receitas</a></li>
                 <li><a href="../../memoria/memoria.html">Jogo Da Memória</a></li>
@@ -40,11 +40,11 @@
                 <a href="../../contatos/contatos.html" class="text"><strong>7 Contatos</strong></a>
 
 
-        </nav>
+        </nav> 
     </header>
 
         <div class="seta">
-        <img src="../../icones/seta_esquerda.png" alt="imagem da seta"  width="50px" onclick="seta()">
+        <img src="../../icones/seta_esquerda.png" alt="imagem da seta"  width="50px"  id="seta">
     </div>
 
     <div class="container">
@@ -103,6 +103,10 @@
                 </ol>
             </div>
         </div>
+        <div class="user">
+            <p>Usuario:Teste</p>
+            <button class="user-button">Sair</button>
+          </div> 
     </div>
 </body>
 </html>
