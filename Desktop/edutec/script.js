@@ -36,7 +36,7 @@ planejamento.addEventListener('click', () => {
 });
 
 memoria.addEventListener('click', () => {
-    window.location.href = 'quizapp/quizapp.html';
+    window.location.href = 'quizapp/quiz.html';
 });
 
 receita.addEventListener('click', () => {
