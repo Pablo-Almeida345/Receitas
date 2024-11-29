@@ -5,7 +5,7 @@ export async function getname() {
         return
     }
 
-    const response = await fetch("http://edutec-back-end.vercel.app/getname", {
+    const response = await fetch("https://edutec-back-end.vercel.app/getname", {
         headers: {
             "Authorization": token
         }

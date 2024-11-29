@@ -7,7 +7,7 @@ export async function veryfyToken(url) {
     }
 
     /*verificar se o token e valido*/
-    const response = await fetch("http://edutec-back-end.vercel.app/verify", {
+    const response = await fetch("https://edutec-back-end.vercel.app/verify", {
         headers: {
             "Authorization": token
         }
